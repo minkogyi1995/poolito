@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block body_block %}
+
+
+
+<h1>Todo App</h1>
+
+{% for i in task %}
+
+<P>Task : {{i.task}} </P>
+<P>note: {{i.note}} </P>
+<P>complete: {{i.complete}} </P>
+<P>created_at: {{i.created_at}} </P>
+<P>updated_at: {{i.updated_at}} </P>
+<hr>
+{% endfor %}
+
+
+
+
+{% endblock %}
+
